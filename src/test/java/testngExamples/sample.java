@@ -16,8 +16,6 @@ public class sample extends BaseTest{
 	public void testMethod() {
 		System.out.println("From test method");
 		logger.info("Browser page tile = "+driver.getTitle());
-		ReadPropertiesFile test = new ReadPropertiesFile();
-		logger.info(test.getSingleProperty("project.properties", "browser"));
 	}
 	@BeforeMethod
 	public void beforeMethod() {
