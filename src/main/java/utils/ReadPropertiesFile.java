@@ -15,7 +15,7 @@ public class ReadPropertiesFile {
 		Properties prop = new Properties();
 		InputStream file = null;
 		try {
-			file = new FileInputStream(getClass().getClassLoader().getResource(fileName).getPath().toString());
+			file = new FileInputStream(getClass().getClassLoader().getResource(fileName).getPath());
 			prop.load(file);
 		}
 		catch (FileNotFoundException e) {
